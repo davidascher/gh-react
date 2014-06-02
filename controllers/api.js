@@ -58,14 +58,15 @@ exports.signAndProxy = function(req, res) {
   var path = req.query.path;
   var url = "https://api.github.com/" + req.query.path;
   delete req.query['path'];
-  req.query['access_token'] = accessToken;
+//  req.query['access_token'] = accessToken;
   url += "?" + querystring.stringify(req.query);
   console.log("GITHUB URL =", url);
   var options = {
       url:  url,
       body: JSON.stringify(req.body),
       headers: {
-          'User-Agent': 'NodeJS HTTP Client'
+          'User-Agent': 'NodeJS HTTP Client',
+          'Authorization': 'token ' + accessToken
       }
   };
   console.log("CALLING GITHUB", options.url);
