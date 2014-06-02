@@ -54,6 +54,7 @@ exports.addToWishlist = function(req, res) {
 
 exports.signAndProxy = function(req, res) {
   var accessToken = req.user.tokens[0].accessToken;
+  console.log("WE HAVE ACCESS TOKEN", accessToken);
   var options = {
       url: "https://api.github.com/" + req.query.path + querystring.stringify(req.params) + "&access_token="+encodeURIComponent(accessToken),
       body: JSON.stringify(req.body),
