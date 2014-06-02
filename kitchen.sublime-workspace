@@ -1,0 +1,1676 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"comp",
+				"componentObj"
+			],
+			[
+				"api",
+				"apiController"
+			],
+			[
+				"mycomp",
+				"mycomponentsController"
+			],
+			[
+				"wish",
+				"wishlistController"
+			],
+			[
+				"Gith",
+				"GitHub"
+			],
+			[
+				"defa",
+				"defaultName"
+			],
+			[
+				"auto",
+				"autosaveCurrentApp"
+			],
+			[
+				"cur",
+				"currentAppName"
+			],
+			[
+				"polymer",
+				"polymer-element"
+			],
+			[
+				"ch",
+				"checkComponentURL"
+			],
+			[
+				"uppera",
+				"upper-latin"
+			],
+			[
+				"roman",
+				"upper-roman"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"ceci-",
+				"ceci-component-loaded"
+			],
+			[
+				"component",
+				"componentlink"
+			],
+			[
+				"compne",
+				"componentPath"
+			],
+			[
+				"addComp",
+				"addComponentByName"
+			],
+			[
+				"li",
+				"licenses"
+			],
+			[
+				"refre",
+				"refreshComponentsList"
+			],
+			[
+				"Hell",
+				"HelloWorld"
+			],
+			[
+				"compo",
+				"componentLink"
+			],
+			[
+				"target",
+				"currentTarget"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"metr",
+				"metronomeArrow"
+			],
+			[
+				"current",
+				"currentCenter"
+			],
+			[
+				"hi",
+				"hideControls"
+			],
+			[
+				"hide",
+				"hideLivestream"
+			],
+			[
+				"show",
+				"showstream"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"v",
+				"visibility"
+			],
+			[
+				"bui",
+				"buildMode"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"border-radius",
+				"border-top-left-radius"
+			],
+			[
+				"broa",
+				"broadcastChannel"
+			],
+			[
+				"inpu",
+				"inputoroutput"
+			],
+			[
+				"disa",
+				"disableReorder"
+			],
+			[
+				"dro",
+				"droppedPageId"
+			],
+			[
+				"newp",
+				"newpageId"
+			],
+			[
+				"jul",
+				"JulianDay"
+			],
+			[
+				"edit",
+				"doneEditing"
+			],
+			[
+				"twe",
+				"tweenBright"
+			],
+			[
+				"tw",
+				"tweenBack"
+			],
+			[
+				"inline",
+				"inline-table"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"crea",
+				"createSpecialGroup"
+			],
+			[
+				"new_te",
+				"new_team_pad_div"
+			],
+			[
+				"new",
+				"new_team_div"
+			],
+			[
+				"user",
+				"userprofile"
+			],
+			[
+				"loggedi",
+				"loggedInAs"
+			],
+			[
+				"logge",
+				"loggedInAs"
+			],
+			[
+				"backgroun",
+				"background	background: color image repeat attachment position"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 5406,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/wishlist.jade",
+			"settings":
+			{
+				"buffer_size": 2683,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/passport.js",
+			"settings":
+			{
+				"buffer_size": 2881,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 17 files for \"authenticate\"\n\n/Users/davida/src/mozilla-appmaker/kitchen/app.js:\n  105  app.get('/', homeController.index);\n  106  app.get('/wishlist', wishlistController.index);\n  107: app.get('/mycomponents', passportConf.isAuthenticated, mycomponentsController.index);\n  108  // Simplify all of these as we're just going to do signin/signout\n  109  app.get('/login', userController.getLogin);\n  ...\n  114  app.get('/contact', contactController.getContact);\n  115  app.post('/contact', contactController.postContact);\n  116: app.get('/account', passportConf.isAuthenticated, userController.getAccount);\n  117: app.post('/account/profile', passportConf.isAuthenticated, userController.postUpdateProfile);\n  118: app.post('/account/password', passportConf.isAuthenticated, userController.postUpdatePassword);\n  119: app.post('/account/delete', passportConf.isAuthenticated, userController.postDeleteAccount);\n  120: app.get('/account/unlink/:provider', passportConf.isAuthenticated, userController.getOauthUnlink);\n  121  app.get('/api', apiController.getApi);\n  122: app.post('/api/favorite', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.favorite);\n  123: app.post('/api/addToWishlist', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.addToWishlist);\n  124: app.get('/api/github', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getGithub);\n  125: app.get('/auth/github', passport.authenticate('github'));\n  126: app.get('/auth/github/callback', passport.authenticate('github', { successRedirect: '/', failureRedirect: '/login' }));\n  127  \n  128  app.listen(app.get('port'), function() {\n\n/Users/davida/src/mozilla-appmaker/kitchen/config/passport.js:\n   65  }));\n   66  \n   67: exports.isAuthenticated = function(req, res, next) {\n   68:   if (req.isAuthenticated()) return next();\n   69    res.redirect('/login');\n   70  };\n\n/Users/davida/src/mozilla-appmaker/kitchen/controllers/api.js:\n   23        secret: secrets.github.clientSecret\n   24    });\n   25:   github.authenticate({\n   26        type: \"oauth\",\n   27        key: secrets.github.clientID,\n\n/Users/davida/src/mozilla-appmaker/kitchen/controllers/user.js:\n   39    }\n   40  \n   41:   passport.authenticate('local', function(err, user, info) {\n   42      if (err) return next(err);\n   43  \n\n15 matches across 4 files\n\n\nSearching 17 files for \"console.log\"\n\n/Users/davida/src/mozilla-appmaker/kitchen/app.js:\n   39  mongoose.connect(secrets.db);\n   40  mongoose.connection.on('error', function() {\n   41:   console.log('✗ MongoDB Connection Error. Please make sure MongoDB is running.'.red);\n   42  });\n   43  \n   ..\n  127  \n  128  app.listen(app.get('port'), function() {\n  129:   console.log(\"✔ Express server listening on port %d in %s mode\", app.get('port'), app.settings.env);\n  130  });\n  131  \n\n/Users/davida/src/mozilla-appmaker/kitchen/cluster_app.js:\n   17  // Listen for dying workers\n   18  cluster.on('exit', function(worker) {\n   19:   console.log('Worker ' + worker.id + ' died');\n   20    // Replace the dead worker\n   21    cluster.fork();\n\n/Users/davida/src/mozilla-appmaker/kitchen/testdata.js:\n    5  var secrets = require('./config/secrets');\n    6  \n    7: console.log(\"secrets.db\", secrets.db);\n    8  mongoose.connect(secrets.db);\n    9  mongoose.connection.on('error', function() {\n   10:   console.log('✗ MongoDB Connection Error. Please make sure MongoDB is running.'.red);\n   11  });\n   12  \n   ..\n   34  components.forEach(function(obj) {\n   35    var comp = new Component(obj);\n   36:   console.log(\"saving component\", obj.name);\n   37    comp.save(function(err, comp) {\n   38      if (err){\n   39:       console.log('Component was not saved due to ' + err);\n   40      }\n   41    });\n\n/Users/davida/src/mozilla-appmaker/kitchen/controllers/api.js:\n   17  \n   18  exports.addToWishlist = function(req, res) {\n   19:   console.log(\"secrets.github\", secrets.github);\n   20    return;\n   21:   console.log({\n   22        type: \"oauth\",\n   23        key: secrets.github.clientID,\n   ..\n   30    // })\n   31    // github.authorizaton.getAll({}, function(err, ret) {\n   32:   //   console.log(\"got auth\", err, ret);\n   33    // });\n   34:   console.log('github', github);\n   35    var componentObj = JSON.parse(JSON.stringify(req.body)) // make a copy\n   36    var msg = {};\n   ..\n   38    msg.repo = \"wishlist\";\n   39    msg.labels = [\"bug\"];\n   40:   console.log(componentObj);\n   41    msg.title = componentObj.name;\n   42    msg.body = componentObj.description;\n   43    github.issues.create(msg, function(err, retval) {\n   44:     console.log(err);\n   45:     console.log(retval);\n   46    });\n   47    // var token = _.findWhere(req.user.tokens, { kind: 'github' });\n\n/Users/davida/src/mozilla-appmaker/kitchen/controllers/wishlist.js:\n    8    Component.find({}).sort({\"name\":1}).exec(function (err, components) {\n    9      if (err){\n   10:       console.log('Unable to retrieve components');\n   11        return res.json(500, 'Unable to retrieve components: ' + err);\n   12      }\n\n/Users/davida/src/mozilla-appmaker/kitchen/models/Component.js:\n   27  \n   28  componentSchema.methods.isFave = function(userid) {\n   29:   console.log(component.fans, userid);\n   30    return (userid in component.fans)\n   31  };\n\n/Users/davida/src/mozilla-appmaker/kitchen/public/js/wishlistUtils.js:\n   10      },\n   11      error: function (data, err) {\n   12:       console.log(\"Error setting a favorite flag\", err);\n   13      }\n   14    });\n   ..\n   50      },\n   51      error: function (data, err) {\n   52:       console.log(\"Error setting a favorite flag\", err);\n   53      }\n   54    });\n\n18 matches across 7 files\n\n\nSearching 17 files for \"new GithubStra\"\n\n/Users/davida/src/mozilla-appmaker/kitchen/config/passport.js:\n   34  }));\n   35  \n   36: passport.use(new GitHubStrategy(secrets.github, function(req, accessToken, refreshToken, profile, done) {\n   37    if (req.user) {\n   38      User.findById(req.user.id, function(err, user) {\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 6027,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "public/js/main.js",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/wishlistUtils.js",
+			"settings":
+			{
+				"buffer_size": 1889,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controllers/wishlist.js",
+			"settings":
+			{
+				"buffer_size": 524,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controllers/api.js",
+			"settings":
+			{
+				"buffer_size": 4139,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/secrets.js",
+			"settings":
+			{
+				"buffer_size": 294,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 27.0,
+		"selected_items":
+		[
+			[
+				"pro",
+				"Project: Add Folder"
+			],
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"grun",
+				"Preferences: Grunt - Settings – Default"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 287.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/davida/src/mozilla-appmaker/kitchen/views/home.jade",
+		"/Users/davida/src/mozilla-appmaker/kitchen/views/layout.jade",
+		"/Users/davida/src/mozilla-appmaker/kitchen/views/withsignin.jade",
+		"/Users/davida/src/mozilla-appmaker/kitchen/controllers/user.js",
+		"/Users/davida/src/mozilla-appmaker/kitchen/config/secrets.js",
+		"/Users/davida/src/mozilla-appmaker/kitchen/views/partials/navigation.jade",
+		"/Users/davida/src/mozilla-appmaker/kitchen/config/passport.js",
+		"/Users/davida/src/mozilla-appmaker/kitchen/README.md",
+		"/Users/davida/src/mozilla-appmaker/step4/controllers/needed.js",
+		"/Users/davida/src/mozilla-appmaker/step4/views/needed.jade",
+		"/Users/davida/src/mozilla-appmaker/step4/public/css/themes/ios7.less",
+		"/Users/davida/src/mozilla-appmaker/step4/views/partials/navigation.jade",
+		"/Users/davida/src/mozilla-appmaker/step4/public/css/styles.less",
+		"/Users/davida/src/mozilla-appmaker/step4/config/secrets.js",
+		"/Users/davida/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/davida/src/mozilla-appmaker/start-here/root/README.md",
+		"/Users/davida/src/mozilla-appmaker/start-here/root/locale/en-US.json",
+		"/Users/davida/src/mozilla-appmaker/start-here/root/example.html",
+		"/Users/davida/src/mozilla-appmaker/start-here/root/component.html",
+		"/Users/davida/src/mozilla-appmaker/start-here/Gruntfile.js",
+		"/Users/davida/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/davida/src/mozilla-appmaker/start-here/root/component.html.tpl",
+		"/Users/davida/src/mozilla-appmaker/appmaker/README.md",
+		"/Users/davida/src/appmaking/js/unix.language.js",
+		"/Users/davida/src/appmaking/js/bash.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/app/styles/bootstrap.css",
+		"/Users/davida/src/mozilla-appmaker/appmaker/appmaker.sublime-project",
+		"/Users/davida/src/mozilla-appmaker/asdf/test/tests.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/designer/js/component-tray.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/designer/components/user-state.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/app.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-element-base.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-element.html",
+		"/Users/davida/src/mozilla-appmaker/ceci-support/iframe-utils.js",
+		"/Users/davida/src/mozilla-appmaker/ceci-support/harness-utils.js",
+		"/Users/davida/src/mozilla-appmaker/asdf/component.html",
+		"/Users/davida/src/mozilla-appmaker/asdf/test/test.html",
+		"/Users/davida/src/mozilla-appmaker/ceci-support/karma.conf.js",
+		"/Users/davida/src/mozilla-appmaker/ceci-support/mocha.conf.js",
+		"/Users/davida/src/mozilla-appmaker/asdf/README.md",
+		"/Users/davida/src/mozilla-appmaker/ceci-support/tests.js",
+		"/Users/davida/src/mozilla-appmaker/asdf/example.html",
+		"/Users/davida/src/mozilla-appmaker/component-template/root/example.html",
+		"/Users/davida/src/mozilla-appmaker/component-template/root/Gruntfile.js",
+		"/Users/davida/src/mozilla-appmaker/component-template/root/README.md",
+		"/Users/davida/src/component-audio-player/component.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/component.html",
+		"/Users/davida/src/mozilla-appmaker/ceci-support/package.json",
+		"/Users/davida/src/mozilla-appmaker/component-template/defaults.json",
+		"/Users/davida/src/mozilla-appmaker/component-template/template.js",
+		"/Users/davida/src/mozilla-appmaker/component-button/tools/iframe-utils.js",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/html/test.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/test/ceci-designer.test.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/conf/karma.conf.js",
+		"/Users/davida/src/mozilla-appmaker/component-template/README.md",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/designer/components/component-tray.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-designer.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/javascripts/requireConfig.js",
+		"/Users/davida/src/xxx/component.html",
+		"/Users/davida/src/mozilla-appmaker/component-template/root/component.html",
+		"/Users/davida/src/mozilla-appmaker/component-template/root/locale/en-US.json",
+		"/Users/davida/src/xxx/component.",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/app/fonts/icomoon-session.json",
+		"/usr/local/etc/tarsnap.conf",
+		"/Users/davida/src/react-page/src/index.js",
+		"/Users/davida/src/react-page/src/elements/VectorWidget/VectorWidget.js",
+		"/Users/davida/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/davida/src/mozilla-appmaker/appmaker/bower.json",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/vendor/angular/bower.json",
+		"/Users/davida/src/mozilla-appmaker/appmaker/sample.env",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/stylesheets/persona-buttons.css",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/stylesheets/style.css",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-element-designer.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/designer/user-state.html",
+		"/Users/davida/Library/Application Support/Sublime Text 2/Packages/Grunt/SublimeGrunt.sublime-settings",
+		"/Users/davida/src/mozilla-appmaker/appmaker/views/layout.ejs",
+		"/Users/davida/src/mozilla-appmaker/appmaker/views/remix-email.ejs",
+		"/Users/davida/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/Users/davida/src/mozilla-appmaker/appmaker/views/testappdesigner.ejs",
+		"/Users/davida/src/mozilla-appmaker/appmaker/views/testapp.ejs",
+		"/Users/davida/src/mozilla-appmaker/appmaker/views/components.ejs",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-app.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/javascripts/designer/designer.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/javascripts/designer/modes.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-card.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/index.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/html/button.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/html/buttonSpec.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/test/fixtures/ceci-button.html",
+		"/Users/davida/src/mozilla-appmaker/AngularJS-Testing-Article/app/scripts/config/routes.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/app/styles/bootstrap.css",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/test/ceci-app.test.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/routes/proxy.js",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/javascripts/designer/component-tray.js",
+		"/Users/davida/src/mozilla-appmaker/component-heading/component.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/views/designer.ejs",
+		"/Users/davida/src/mozilla-appmaker/appmaker/views/designerHTML.ejs",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-card-base.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/component.css",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-broadcast-vis.html",
+		"/Users/davida/src/mozilla-appmaker/appmaker/public/ceci/ceci-card-designer.html",
+		"/Users/davida/src/mozilla-appmaker/component-counter/package.json",
+		"/Users/davida/src/mozilla-appmaker/appmaker/Gruntfile.js",
+		"/Users/davida/src/mozilla-appmaker/component-button/Gruntfile.js",
+		"/Users/davida/src/mozilla-appmaker/component-counter/test/html/bind.html",
+		"/Users/davida/src/mozilla-appmaker/component-counter/component.html",
+		"/Users/davida/src/mozilla-appmaker/component-counter/test/lib/htmltest.js",
+		"/Users/davida/src/mozilla-appmaker/component-counter/test/lib/mocha-htmltest.js",
+		"/Users/davida/src/mozilla-appmaker/component-counter/Gruntfile.js",
+		"/Users/davida/src/mozilla-appmaker/component-counter/component.css",
+		"/Users/davida/src/polymer-build/components/polymer-dev/gruntfile.js",
+		"/Users/davida/src/polymer-build/components/polymer-dev/src/instance/base.js",
+		"/Users/davida/src/polymer-build/components/polymer-dev/build.bat",
+		"/Users/davida/src/mozilla-appmaker/appmaker/open",
+		"/Users/davida/src/mozilla-appmaker/dashboard/jobs/github.job.js",
+		"/Users/davida/src/polymer-build/components/polymer-dev/src/instance/mdv.js",
+		"/Users/davida/src/mozilla-appmaker/dashboard/dashboards/layout.jade",
+		"/Users/davida/src/mozilla-appmaker/component-button/Gruntfile",
+		"/Users/davida/src/mozilla-appmaker/component-button/runner.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/html/bind-object-repeat.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/js/inline-button.js",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/html/hello-app.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/html/bind.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/fixtures/hello-app.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/components.html",
+		"/Users/davida/src/mozilla-appmaker/component-button/test/js/bindProperties.js",
+		"/Users/davida/src/mozilla-appmaker/component-button/conf/mocha.conf.js",
+		"/Users/davida/src/polymer-build/components/polymer-dev/test/html/bind-object-repeat.html"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.js",
+			".js",
+			"jade",
+			"",
+			"*.jade",
+			"jade",
+			"",
+			"font*",
+			"*.less",
+			"",
+			"*.less",
+			"",
+			"*.jade",
+			"",
+			"*.jade",
+			"*.less",
+			"",
+			".",
+			"<%",
+			"",
+			"setCurrentAppName",
+			"",
+			"~/src/mozilla-appmaker/",
+			"",
+			"~/src/mozilla-appmaker/appmaker",
+			".",
+			"",
+			".",
+			"~/src/mozilla-appmaker/appmaker",
+			"",
+			"~/src/mozilla-appmaker/appmaker",
+			"~/src/mozilla-appmaker/component-button",
+			"~/src/mozilla-appmaker/appmaker",
+			"~/src/mozilla-appmaker/component-button",
+			"",
+			"..",
+			".",
+			"",
+			"..",
+			".",
+			"",
+			".",
+			"../..",
+			"..",
+			"",
+			"~/src/mozilla-appmaker/appmaker",
+			".",
+			"",
+			".",
+			"..",
+			"",
+			".",
+			"",
+			"*.css",
+			"",
+			"~/src/mozilla-appmaker/**.css",
+			"~/src/mozilla-appmaker/",
+			"~/src/mozilla-appmaker/appmaker",
+			"",
+			"~/src/mozilla-appmaker/component-button",
+			"~/src/mozilla-appmaker/appmaker",
+			"~/src/mozilla-appmaker/component-button",
+			"~/src/mozilla-appmaker/appmaker/",
+			"",
+			"~/src/mozilla-appmaker/component-button",
+			"~/src/mozilla-appmaker/appmaker",
+			"~/src/polymer-build/components/",
+			"~/src/polymer-build/components/polymer-dev",
+			".",
+			"~/src/mozilla-appmaker/tools",
+			"~/src/mozilla-appmaker/component-button",
+			".",
+			"",
+			".",
+			"..",
+			"",
+			"..",
+			"",
+			".",
+			"",
+			"~/src/mozilla-appmaker/appmaker",
+			".",
+			"~/src/appmaker",
+			"..",
+			".",
+			"~/src/teaching-appmaker",
+			"~/Dropbox/harp.io/apps/",
+			"../../..",
+			".",
+			"~/src/teach-appmaker",
+			"~/src/appmaker",
+			"~/src/myceci",
+			"~/src/appmaker",
+			"~/src/appmaker-components",
+			"~/src/appmaker",
+			"~/src/ceci",
+			"~/src/appmaker",
+			"~/src/appmaker-components",
+			".",
+			"~/src/appmaker/",
+			"~/src/appmaker/public",
+			".",
+			"~/src/appmaker/public",
+			"~/src/appmaker",
+			".",
+			"~/src/uptime",
+			"~/src/actionitems",
+			"~/src/iabot",
+			"~/src/coauthor/coauthor_site",
+			"~/src/coauthor",
+			"~/src/coauthor.sprint",
+			"~/src/betafarm,*.py,-~/src/betafarm/vendor,-~/src/betafarm/lib",
+			"~/src/betafarm,*.py,-~/src/betafarm/vendor",
+			"~/src/betafarm,*.py",
+			"~/src/betafarm",
+			"../../../../..",
+			"../../../..",
+			"../../..",
+			"..",
+			"",
+			".html",
+			"."
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"new GithubStra",
+			"console.log",
+			"authenticate",
+			"github",
+			"secrets.github",
+			"Github",
+			".user",
+			"read",
+			"document.ready",
+			"ready",
+			"toggleStar",
+			"wishlist",
+			"res.locals",
+			"isAuth",
+			"getLogin",
+			"mine.js",
+			"toggleStar",
+			"splice",
+			"remove",
+			"findBy",
+			"findById",
+			"setFavorite",
+			"/favorite",
+			"setFavo",
+			"findOne",
+			"models/Com",
+			"script(src",
+			"getJSON",
+			"jquery.get",
+			"isAutho",
+			".post",
+			"500",
+			"favorite",
+			"getGith",
+			"json",
+			"XmlHttp",
+			"plural",
+			"comparePassword",
+			"isFave",
+			"res.locals.comp",
+			"?",
+			"class=",
+			"?",
+			"mongoose.",
+			"console.log",
+			"findAll",
+			"../models",
+			"res.locals",
+			"mongoose.conn",
+			"config",
+			"localho",
+			"new User",
+			"Users",
+			"User.js",
+			"tokens",
+			"isAuth",
+			"needed",
+			"isAuthenticated",
+			"next",
+			"contribute",
+			"click the",
+			"text-align",
+			"starrable",
+			"classList",
+			"fa-star",
+			"star",
+			"fontawesome",
+			"glyphicons",
+			"transition",
+			"opacity",
+			"transition",
+			"space",
+			"homecon",
+			"home",
+			"lower",
+			"suggestions",
+			"faceboo",
+			";",
+			"forEach",
+			"()",
+			"carousel-control",
+			"ios",
+			"carousel-control",
+			"item",
+			"bootstrap",
+			"class=",
+			"active",
+			"for ",
+			"class",
+			"buttons-radio",
+			"bootstrap-butt",
+			"bootstrap",
+			"radio",
+			"form-control",
+			"Step 2",
+			"btn-success",
+			"btn-succe",
+			"theme",
+			"flatly",
+			"sendgrid",
+			"node-four",
+			"navbar-brand",
+			"navbar-nav",
+			"navbar-default-bg",
+			"img/",
+			"paypal",
+			"XmlHttpRequest",
+			"json",
+			"white",
+			"monokai",
+			"template",
+			"%",
+			")",
+			"}",
+			"%}",
+			"{%",
+			"template",
+			"next",
+			"autosave",
+			"startauto",
+			"settime",
+			"loadAppBy",
+			"loadAppByName",
+			"autosave",
+			"setTim",
+			"timer",
+			"getCurrentApp(",
+			"getCurrentApp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"%>",
+			"<%",
+			"clearCurrentAppName",
+			"setCurrentAppName",
+			"appState",
+			"app-form-submit",
+			"app-form-text",
+			"app-button",
+			".component",
+			"pageId",
+			"medium/",
+			",",
+			"<div class=\"answer\">",
+			"<div class=\"question\">",
+			"</strong>",
+			"<p>",
+			"<strong>",
+			"",
+			"bootstrap",
+			"/>",
+			"</a>",
+			"width=",
+			"</a>",
+			"&#8212;",
+			"&emdash;",
+			"--",
+			"tabz-",
+			"tabz",
+			") {",
+			"tabz\n    '<div id=\"tabzilla-contents\">'\n    + '  <div id=\"tabzilla-promo\">'\n    + '    <div class=\"snippet\" id=\"tabzilla-promo-flicks\">'\n    + '    <a href=\"https://firefoxflicks.mozilla.org/en-US/?WT.mc_id=fff1enus&WT.mc_ev=click\">'\n    + '      Great prizes! Hollywood judges! Exclamation marks! Enter Firefox Flicks, the global video contest to tell our story, or vote for your favorites!</a>'\n    + '    </div>'\n    + '  </div>'\n    + '  <div id=\"tabzilla-nav\">'\n    + '    <ul>'\n    + '      <li><h2>Mozilla</h2>'\n    + '        <ul>'\n    + '          <li><a href=\"http://www.mozilla.org/mission/\">Mission</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/about/\">About</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/projects/\">Projects</a></li>'\n    + '          <li><a href=\"http://support.mozilla.org/\">Support</a></li>'\n    + '          <li><a href=\"https://developer.mozilla.org\">Developer Network</a></li>'\n    + '        </ul>'\n    + '      </li>'\n    + '      <li><h2>Products</h2>'\n    + '        <ul>'\n    + '          <li><a href=\"http://www.mozilla.org/firefox\">Firefox</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/thunderbird\">Thunderbird</a></li>'\n    + '        </ul>'\n    + '      </li>'\n    + '      <li><h2>Innovations</h2>'\n    + '        <ul>'\n    + '          <li><a href=\"https://webfwd.org/\">WebFWD</a></li>'\n    + '          <li><a href=\"http://mozillalabs.com/\">Labs</a></li>'\n    + '        </ul>'\n    + '      </li>'\n    + '      <li><h2>Get Involved</h2>'\n    + '        <ul>'\n    + '          <li><a href=\"http://www.mozilla.org/contribute/\">Volunteer</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/en-US/about/careers.html\">Careers</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/en-US/about/mozilla-spaces/\">Find us</a></li>'\n    + '          <li><a href=\"https://donate.mozilla.org/\">Join us</a></li>'\n    + '        </ul>'\n    + '      </li>'\n    + '      <li id=\"tabzilla-search\">'\n    + '        <a href=\"http://www.mozilla.org/community/directory.html\">Website Directory</a>'\n    + '        <form title=\"Search Mozilla sites\" action=\"http://www.google.com/cse\">'\n    + '          <input type=\"hidden\" value=\"002443141534113389537:ysdmevkkknw\" name=\"cx\">'\n    + '          <input type=\"hidden\" value=\"FORID:0\" name=\"cof\">'\n    + '          <input type=\"search\" placeholder=\"Search\" id=\"q\" name=\"q\">'\n    + '        </form>'\n    + '      </li>'\n    + '    </ul>'\n    + '  </div>'\n    + '</div>';\n",
+			"\n    '<div id=\"tabzilla-contents\">'\n    + '  <div id=\"tabzilla-promo\">'\n    + '    <div class=\"snippet\" id=\"tabzilla-promo-flicks\">'\n    + '    <a href=\"https://firefoxflicks.mozilla.org/en-US/?WT.mc_id=fff1enus&WT.mc_ev=click\">'\n    + '      Great prizes! Hollywood judges! Exclamation marks! Enter Firefox Flicks, the global video contest to tell our story, or vote for your favorites!</a>'\n    + '    </div>'\n    + '  </div>'\n    + '  <div id=\"tabzilla-nav\">'\n    + '    <ul>'\n    + '      <li><h2>Mozilla</h2>'\n    + '        <ul>'\n    + '          <li><a href=\"http://www.mozilla.org/mission/\">Mission</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/about/\">About</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/projects/\">Projects</a></li>'\n    + '          <li><a href=\"http://support.mozilla.org/\">Support</a></li>'\n    + '          <li><a href=\"https://developer.mozilla.org\">Developer Network</a></li>'\n    + '        </ul>'\n    + '      </li>'\n    + '      <li><h2>Products</h2>'\n    + '        <ul>'\n    + '          <li><a href=\"http://www.mozilla.org/firefox\">Firefox</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/thunderbird\">Thunderbird</a></li>'\n    + '        </ul>'\n    + '      </li>'\n    + '      <li><h2>Innovations</h2>'\n    + '        <ul>'\n    + '          <li><a href=\"https://webfwd.org/\">WebFWD</a></li>'\n    + '          <li><a href=\"http://mozillalabs.com/\">Labs</a></li>'\n    + '        </ul>'\n    + '      </li>'\n    + '      <li><h2>Get Involved</h2>'\n    + '        <ul>'\n    + '          <li><a href=\"http://www.mozilla.org/contribute/\">Volunteer</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/en-US/about/careers.html\">Careers</a></li>'\n    + '          <li><a href=\"http://www.mozilla.org/en-US/about/mozilla-spaces/\">Find us</a></li>'\n    + '          <li><a href=\"https://donate.mozilla.org/\">Join us</a></li>'\n    + '        </ul>'\n    + '      </li>'\n    + '      <li id=\"tabzilla-search\">'\n    + '        <a href=\"http://www.mozilla.org/community/directory.html\">Website Directory</a>'\n    + '        <form title=\"Search Mozilla sites\" action=\"http://www.google.com/cse\">'\n    + '          <input type=\"hidden\" value=\"002443141534113389537:ysdmevkkknw\" name=\"cx\">'\n    + '          <input type=\"hidden\" value=\"FORID:0\" name=\"cof\">'\n    + '          <input type=\"search\" placeholder=\"Search\" id=\"q\" name=\"q\">'\n    + '        </form>'\n    + '      </li>'\n    + '    </ul>'\n    + '  </div>'\n    + '</div>';\n",
+			"tabz",
+			"/www",
+			"/static",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 5406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5153,
+								5153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1019.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/wishlist.jade",
+					"settings":
+					{
+						"buffer_size": 2683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1969,
+								1969
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 603.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/passport.js",
+					"settings":
+					{
+						"buffer_size": 2881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1461,
+								1461
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 461.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 6027,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										235,
+										247
+									],
+									[
+										571,
+										583
+									],
+									[
+										665,
+										677
+									],
+									[
+										767,
+										779
+									],
+									[
+										868,
+										880
+									],
+									[
+										977,
+										989
+									],
+									[
+										1118,
+										1130
+									],
+									[
+										1238,
+										1250
+									],
+									[
+										1355,
+										1367
+									],
+									[
+										1463,
+										1475
+									],
+									[
+										1537,
+										1549
+									],
+									[
+										1772,
+										1784
+									],
+									[
+										1834,
+										1846
+									],
+									[
+										2051,
+										2063
+									],
+									[
+										2239,
+										2251
+									],
+									[
+										2551,
+										2562
+									],
+									[
+										2726,
+										2737
+									],
+									[
+										2994,
+										3005
+									],
+									[
+										3223,
+										3234
+									],
+									[
+										3360,
+										3371
+									],
+									[
+										3561,
+										3572
+									],
+									[
+										3679,
+										3690
+									],
+									[
+										3892,
+										3903
+									],
+									[
+										3965,
+										3976
+									],
+									[
+										4149,
+										4160
+									],
+									[
+										4209,
+										4220
+									],
+									[
+										4421,
+										4432
+									],
+									[
+										4604,
+										4615
+									],
+									[
+										4633,
+										4644
+									],
+									[
+										4923,
+										4934
+									],
+									[
+										5199,
+										5210
+									],
+									[
+										5429,
+										5440
+									],
+									[
+										5580,
+										5591
+									],
+									[
+										5830,
+										5844
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								5837,
+								5837
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3080.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/js/main.js",
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								73
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/js/wishlistUtils.js",
+					"settings":
+					{
+						"buffer_size": 1889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1613,
+								1613
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 520.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "controllers/wishlist.js",
+					"settings":
+					{
+						"buffer_size": 524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								513,
+								513
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "controllers/api.js",
+					"settings":
+					{
+						"buffer_size": 4139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1099,
+								1099
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 317.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "config/secrets.js",
+					"settings":
+					{
+						"buffer_size": 294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 241.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"api",
+				"controllers/api.js"
+			],
+			[
+				"sec",
+				"config/secrets.js"
+			],
+			[
+				"wish",
+				"views/wishlist.jade"
+			],
+			[
+				"secr",
+				"config/secrets.js"
+			],
+			[
+				"app",
+				"app.js"
+			],
+			[
+				"wishli",
+				"public/js/wishlistUtils.js"
+			],
+			[
+				"wishl",
+				"views/wishlist.jade"
+			],
+			[
+				"wi",
+				"views/wishlist.jade"
+			],
+			[
+				"user",
+				"controllers/user.js"
+			],
+			[
+				"compon",
+				"models/Component.js"
+			],
+			[
+				"test",
+				"testdata.js"
+			],
+			[
+				"testd",
+				"testdata.js"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"button",
+				"public/css/lib/bootstrap/buttons.less"
+			],
+			[
+				"need",
+				"views/needed.jade"
+			],
+			[
+				"",
+				"public/css/lib/bootstrap/forms.less"
+			],
+			[
+				"forms",
+				"public/css/lib/bootstrap/forms.less"
+			],
+			[
+				"needed",
+				"views/needed.jade"
+			],
+			[
+				"icons",
+				"public/css/lib/bootstrap/glyphicons.less"
+			],
+			[
+				"tables.",
+				"public/css/lib/bootstrap/tables.less"
+			],
+			[
+				"boot",
+				"public/css/lib/bootstrap/bootstrap.less"
+			],
+			[
+				"boo",
+				"public/css/lib/bootstrap/bootstrap.less"
+			],
+			[
+				"layou",
+				"views/layout.jade"
+			],
+			[
+				"main",
+				"public/js/main.js"
+			],
+			[
+				"applica",
+				"public/designer/js/application.js"
+			],
+			[
+				"proxy",
+				"routes/proxy.js"
+			],
+			[
+				"l10n",
+				"public/javascripts/l10n.js"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"user-sta",
+				"public/designer/components/user-state.html"
+			],
+			[
+				"my",
+				"routes/my.js"
+			],
+			[
+				"user-st",
+				"public/designer/components/user-state.html"
+			],
+			[
+				"app.js",
+				"app.js"
+			],
+			[
+				"user-s",
+				"public/designer/components/user-state.html"
+			],
+			[
+				"routes",
+				"routes/proxy.js"
+			],
+			[
+				"less",
+				"public/stylesheets/user-state.less"
+			],
+			[
+				"ceci-ele",
+				"public/ceci/ceci-element-base.html"
+			],
+			[
+				"tray",
+				"public/designer/components/component-tray.html"
+			],
+			[
+				"u",
+				"public/stylesheets/user-state.less"
+			],
+			[
+				"component-tra",
+				"public/designer/js/component-tray.js"
+			],
+			[
+				"subl",
+				"appmaker/appmaker.sublime-project"
+			],
+			[
+				"tests",
+				"asdf/test/tests.js"
+			],
+			[
+				"tests.",
+				"ceci-support/tests.js"
+			],
+			[
+				"harnes",
+				"ceci-support/harness-utils.js"
+			],
+			[
+				"ceci-element-b",
+				"appmaker/public/ceci/ceci-element-base.html"
+			],
+			[
+				"ifram",
+				"ceci-support/iframe-utils.js"
+			],
+			[
+				"harne",
+				"ceci-support/harness-utils.js"
+			],
+			[
+				"karma",
+				"ceci-support/karma.conf.js"
+			],
+			[
+				"component.html",
+				"asdf/component.html"
+			],
+			[
+				"req",
+				"appmaker/public/javascripts/requireConfig.js"
+			],
+			[
+				"component-tray.html",
+				"appmaker/public/designer/components/component-tray.html"
+			],
+			[
+				"locale/en",
+				"component-template/root/locale/en-US.json"
+			],
+			[
+				"component-template/root/comp",
+				"component-template/root/component.html"
+			],
+			[
+				"requi",
+				"appmaker/public/javascripts/requireConfig.js"
+			],
+			[
+				"ceci",
+				"appmaker/public/ceci/ceci-designer.js"
+			],
+			[
+				"ceci-des",
+				"appmaker/public/ceci/ceci-designer.js"
+			],
+			[
+				"packa",
+				"ceci-support/package.json"
+			],
+			[
+				"component-template/gr",
+				"component-template/root/Gruntfile.js"
+			],
+			[
+				"iframe-u",
+				"component-button/tools/iframe-utils.js"
+			],
+			[
+				"layout",
+				"mozilla-appmaker/appmaker/views/layout.ejs"
+			],
+			[
+				"userst",
+				"appmaker/public/designer/components/user-state.html"
+			],
+			[
+				"my.j",
+				"appmaker/routes/my.js"
+			],
+			[
+				"pack",
+				"appmaker/package.json"
+			],
+			[
+				"component-tr",
+				"appmaker/public/designer/js/component-tray.js"
+			],
+			[
+				"routes.js",
+				"appmaker/routes/component-registry.js"
+			],
+			[
+				"route",
+				"appmaker/routes/index.js"
+			],
+			[
+				"design",
+				"appmaker/views/designer.ejs"
+			],
+			[
+				"lyout",
+				"appmaker/views/layout.ejs"
+			],
+			[
+				"ocmpon",
+				"appmaker/routes/component-registry.js"
+			],
+			[
+				"requirec",
+				"appmaker/public/javascripts/requireConfig.js"
+			],
+			[
+				"component",
+				"appmaker/routes/component-registry.js"
+			],
+			[
+				"user-",
+				"appmaker/public/designer/user-state.html"
+			],
+			[
+				"persona-bu",
+				"appmaker/public/stylesheets/persona-buttons.css"
+			],
+			[
+				"style",
+				"appmaker/public/stylesheets/style.css"
+			],
+			[
+				"index",
+				"appmaker/routes/index.js"
+			],
+			[
+				"componentre",
+				"appmaker/routes/component-registry.js"
+			],
+			[
+				"ceci-card",
+				"mozilla-appmaker/appmaker/public/ceci/ceci-card.html"
+			],
+			[
+				"ceci-car",
+				"mozilla-appmaker/appmaker/public/ceci/ceci-card-base.html"
+			],
+			[
+				"appl",
+				"mozilla-appmaker/appmaker/public/javascripts/application.js"
+			],
+			[
+				"persona-",
+				"mozilla-appmaker/appmaker/public/stylesheets/persona-buttons.css"
+			],
+			[
+				"style.css",
+				"mozilla-appmaker/appmaker/public/stylesheets/style.css"
+			],
+			[
+				"component.css",
+				"mozilla-appmaker/component-counter/component.css"
+			],
+			[
+				"component.ht",
+				"mozilla-appmaker/component-counter/component.html"
+			],
+			[
+				"test/bind",
+				"mozilla-appmaker/component-counter/test/html/bind.html"
+			],
+			[
+				"grun",
+				"mozilla-appmaker/component-counter/Gruntfile.js"
+			],
+			[
+				"layo",
+				"mozilla-appmaker/appmaker/views/layout.ejs"
+			],
+			[
+				"ceci-card-desi",
+				"mozilla-appmaker/appmaker/public/ceci/ceci-card-designer.html"
+			],
+			[
+				"-design",
+				"mozilla-appmaker/appmaker/public/ceci/ceci-card-designer.html"
+			],
+			[
+				"-vis",
+				"mozilla-appmaker/appmaker/public/ceci/ceci-broadcast-vis.html"
+			],
+			[
+				"comp",
+				"mozilla-appmaker/component-counter/component.css"
+			],
+			[
+				"ceci-elem",
+				"mozilla-appmaker/appmaker/public/ceci/ceci-element-base.html"
+			],
+			[
+				"ceci-card-bas",
+				"mozilla-appmaker/appmaker/public/ceci/ceci-card-base.html"
+			],
+			[
+				"designer",
+				"mozilla-appmaker/appmaker/views/designerHTML.ejs"
+			],
+			[
+				"desig",
+				"mozilla-appmaker/appmaker/views/designer.ejs"
+			],
+			[
+				"ceci-app",
+				"mozilla-appmaker/appmaker/public/ceci/test/ceci-app.test.html"
+			],
+			[
+				"prox",
+				"mozilla-appmaker/appmaker/routes/proxy.js"
+			],
+			[
+				"compo",
+				"mozilla-appmaker/component-button/component.css"
+			],
+			[
+				"ceci-bu",
+				"mozilla-appmaker/appmaker/public/ceci/test/fixtures/ceci-button.html"
+			],
+			[
+				"modes",
+				"mozilla-appmaker/appmaker/public/javascripts/designer/modes.js"
+			],
+			[
+				"broadcast-v",
+				"mozilla-appmaker/appmaker/public/ceci/ceci-broadcast-vis.html"
+			],
+			[
+				"routes/in",
+				"routes/index.js"
+			],
+			[
+				"cec",
+				"public/vendor/ceci/ceci-cards.js"
+			],
+			[
+				"m",
+				"/Users/davida/src/dzslides/mozway.html"
+			],
+			[
+				"a",
+				"asd"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true
+}

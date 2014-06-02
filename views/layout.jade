@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    script(src="http://fb.me/react-0.10.0.js")
+    script(src="http://fb.me/JSXTransformer-0.10.0.js")
+    script(src="http://code.jquery.com/jquery-1.10.0.min.js")
+    script(src="/js/lodash.min.js")
+    link(rel="stylesheet" href="/css/main.css")
+    script(type="text/jsx",src="/js/milestone.js")
+
+    title #{title} - Playing with github issues
+
+    link(href='/css/styles.css?v=#{cacheBuster}', rel='stylesheet')
+
+    script(src='/js/lib/jquery.js?v=#{cacheBuster}')
+    script(src='/js/lib/bootstrap.js?v=#{cacheBuster}')
+    script(src='/js/main.js?v=#{cacheBuster}')
+
+  body
+    #wrap
+      include partials/navigation
+      .container
+        include partials/flash
+        block notice
+        block content

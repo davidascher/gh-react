@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  p.lead
+    | Your Github-hosted Appmaker components
+
+  p
+    | Note: if you want to submit one of your components to Appmaker, click on the corresponding
+    | "submit" button.  We'll check it out, and see if it's ready for
+    | inclusion in the default set of components.
+
+  .col-sm-14.col-sm-offset-0
+    table.table.table-bordered.table-striped
+      thead
+        tr
+          th
+            | Component name
+          th.center-column
+            | Lint-free
+          th.center-column
+            | Localizable
+          th.center-column
+            | Contribute
+      tbody
+        tr
+          td
+            a(href="/")
+              | Flickr Gallery
+          include partials/check
+          include partials/check
+          include partials/contribute
+        tr
+          td
+            a(href="/")
+              | Share to Facebook
+          include partials/check
+          include partials/check
+          include partials/contribute
+        tr
+          td
+            a(href="/")
+              | Share to Twitter
+          include partials/check
+          include partials/check
+          include partials/contribute
+
+  p 
+  | Of course, there's no requirement to host components on Github, any URL
+  | can be used with the designer.  We recommend Github because we're able to
+  | facilitate contributions to the shared repository of components.

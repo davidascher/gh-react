@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  .col-sm-8.col-sm-offset-2
+    form(method='POST')
+      legend Sign in via GitHub
+      p
+        | We use GitHub for collaboration and automation.  Please sign in with Github,
+        | and make a free GitHub account if you don't have one already.
+
+      .form-group
+        a.btn.btn-github(href='/auth/github')
+          i.fa.fa-github
+          | Sign in with GitHub

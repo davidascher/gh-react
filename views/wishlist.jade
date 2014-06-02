@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  p.lead
+    | Components the Appmaker users say they need
+
+  .col-sm-14.col-sm-offset-0
+    script(src="/js/wishlistUtils.js")
+    .col-sm-12.col-sm-offset-0
+      table.table.table-bordered.table-striped
+        thead
+          tr
+            th
+              | Component name
+            th.center-column
+              | Description
+        tbody#issues
+
+  .col-sm-14.col-sm-offset-0
+
+    legend Are there other components you wished we had?
+    p
+      | Let us know, and maybe someone will build one.  If they do and we find out about it,
+      | we'll let you know.  Your Github account will be associated with this request, so that
+      | developers may contact you to find out more about what you need if necessary.
+
+    form.form-horizontal(id='suggestion-form')
+
+      .form-group
+        label.col-sm-5.control-label(for='needed') What would be a good name?
+        .col-sm-7
+          input.form-control(type='string', name='component_name', id='component_name',
+              autofocus='true',
+              placeholder='e.g. Image Gallery', onchange="checkSubmission(this)", onkeyup="checkSubmission(this)")
+      .form-group
+        label.col-sm-5.control-label(for='needed') What would this component do?
+        .col-sm-7
+          textarea.form-control.component_description(id='description', name="description",
+            onchange="checkSubmission(this)", onkeyup="checkSubmission(this)"
+            placeholder='e.g. "It would take images as inputs, let people swipe to show different images, and emit images when tapped."')
+          //- need to validate that repo is available for this user
+      .form-group
+        label.col-sm-5.control-label(for='needed') What kinds of apps do you think it could be used for?
+        .col-sm-7
+          textarea.form-control(type='string', name='sample_apps', id='sample_apps',
+            onchange="checkSubmission(this)", onkeyup="checkSubmission(this)"
+            placeholder='e.g. "apps to show people picures they take with their phones"')
+
+      .form-group#ready.disabled
+        .col-sm-offset-5.col-sm-7
+          button.btn.btn-success#submit(onclick='submitSuggestion()')
+            | Add to the wishlist
