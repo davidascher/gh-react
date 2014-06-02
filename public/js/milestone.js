@@ -145,6 +145,10 @@ var TableSorter = React.createClass({
           if (this.state.columns[c].slice) {
             return <td>{x[c][this.state.columns[c].slice]}</td>
           } else {
+            if (c == 'number') {
+              console.log(x);
+              return <td><a href={x['html_url']}>{x[c]}</a></td>;
+            }
             return <td>{x[c]}</td>;
           }
         }
@@ -239,13 +243,13 @@ var DataSourceSelectors = React.createClass({
 
 function urlForDataSource(source) {
   return "/api/signAndProxy?path=repos/" + source.repo + "/issues&milestone="+source.milestone;
-//  return "/api/getIssuesForMilestone?" + "repo="+source.repo + "&" + 
-//    "milestone=" + source.milestone;
 }
 
 var App = React.createClass({
   getInitialState: function() {
-    return {source: {repo: "mozilla-appmaker/appmaker", milestone: "26"}};
+    return {source: {repo: "mozilla-appmaker/appmaker", 
+                     milestone: "26",
+                     state: "all"}};
   },
   handleSourceChange: function(source) {
     this.setState({source: source});
@@ -298,3 +302,5 @@ Array.prototype.forEach.call(expandos, function(expando) {
       state: expando.getAttribute('data-state')
     }), expando);
 });
+
+React.renderComponent(<App />, document.getElementById("app"));
