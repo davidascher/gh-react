@@ -66,8 +66,6 @@ var TableSorter = React.createClass({
       if (this.state.sort.column != column) {
           newSortOrder = this.state.columns[column].defaultSortOrder;
       }
-      console.log("setting new sort", { column: column, order: newSortOrder });
-
       this.setState({sort: { column: column, order: newSortOrder }});
     }.bind(this);
   },
@@ -99,18 +97,14 @@ var TableSorter = React.createClass({
         }
       }
     }, this);
-    console.log(this.state.items);
     
     var filteredItems = _.filter(this.state.items, function(item) {
       return _.every(columnNames, function(c) {
         if (this.state.columns[c].slice) {
-//          console.log(item[c][this.state.columns[c].slice]);
           if (filters[c]) {
             return filters[c](item[c][this.state.columns[c].slice]);
           }
           return item[c][this.state.columns[c].slice]
-//          console.log(filters[c]); // (item[c][this.state.columns[c].slice]));
-//          return (!filters[c] || filters[c](item[c][this.state.columns[c].slice]));
         } else {
           if (filters[c]) return filters[c](item[c]);
           return item[c]
@@ -118,7 +112,6 @@ var TableSorter = React.createClass({
       }, this);
     }, this);
     
-    console.log(this.state.sort.column, this.state.sort.column.toLowerCase(), this.state.columns, filteredItems);
     var attribute = this.state.sort.column.toLowerCase();
     var slice = this.state.columns[this.state.sort.column.toLowerCase()].slice;
     var sortedItems;
@@ -267,9 +260,6 @@ var App = React.createClass({
   }
 });
 
-React.renderComponent(<App />, document.getElementById("app"));
-
-
 /** @jsx React.DOM */
 
 var Issue = React.createClass({
@@ -281,8 +271,10 @@ var Issue = React.createClass({
 var Issues = React.createClass({
   getInitialState: function() {
     return {
-      milestonename: '',
-      issues: []
+      source: {
+        milestone: 26,
+        repo: 'mozilla-appmaker/appmaker',
+      }
     };
   },
 

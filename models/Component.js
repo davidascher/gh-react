@@ -26,7 +26,6 @@ var componentSchema = new mongoose.Schema({
 // });
 
 componentSchema.methods.isFave = function(userid) {
-  console.log(component.fans, userid);
   return (userid in component.fans)
 };
 
