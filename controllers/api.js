@@ -55,13 +55,20 @@ exports.addToWishlist = function(req, res) {
 exports.signAndProxy = function(req, res) {
   var accessToken = req.user.tokens[0].accessToken;
   console.log("WE HAVE ACCESS TOKEN", accessToken);
+  var path = req.query.path;
+  var url = "https://api.github.com/" + req.query.path;
+  delete req.query['path'];
+  req.query['access_token'] = accessToken;
+  url += "?" + querystring.stringify(req.query);
+  console.log("GITHUB URL =", url);
   var options = {
-      url: "https://api.github.com/" + req.query.path + querystring.stringify(req.params) + "&access_token="+encodeURIComponent(accessToken),
+      url:  url,
       body: JSON.stringify(req.body),
       headers: {
           'User-Agent': 'NodeJS HTTP Client'
       }
   };
+  console.log("CALLING GITHUB", options.url);
   request.get(options, function(err, ret, body) {
     if (err) {
       res.json('500', err);
