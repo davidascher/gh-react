@@ -238,7 +238,7 @@ var DataSourceSelectors = React.createClass({
 });
 
 function urlForDataSource(source) {
-  return "/api/signAndProxy?path=repos/" + source.repo + "/issues?milestone="+source.milestone;
+  return "/api/signAndProxy?path=repos/" + source.repo + "/issues&milestone="+source.milestone;
 //  return "/api/getIssuesForMilestone?" + "repo="+source.repo + "&" + 
 //    "milestone=" + source.milestone;
 }
