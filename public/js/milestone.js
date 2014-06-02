@@ -290,18 +290,9 @@ var Issues = React.createClass({
   },
 
   render: function() {
-    if (this.state.results) {
-      var items = {};
-      this.state.results.forEach(function(result) {
-        // If result.id can look like a number (consider short hashes), then
-        // object iteration order is not guaranteed. In this case, we add a prefix
-        // to ensure the keys are strings.
-        items['issue-' + result.id] = Issue(result);
-      });
-      return (
-        <TableSorter dataSource={urlForDataSource(this.state.source)} config={CONFIG}/>
-      );
-    }
+    return (
+      <TableSorter dataSource={urlForDataSource(this.state.source)} config={CONFIG}/>
+    );
   }
 });
 
